@@ -1,6 +1,6 @@
 # 🧠 JavaScript Interviews Preparation
 
-Welcome to the **JavaScript Interviews Preparation** repository! This project is a complete guide to help developers prepare for JavaScript technical interviews — whether you're a beginner brushing up on basics or an experienced developer interviews.
+<p>Welcome to the **JavaScript Interviews Preparation** repository! This project is a complete guide to help developers prepare for JavaScript technical interviews — whether you're a beginner brushing up on basics or an experienced developer interviews.</p>
 ---
 
 📌 What You'll Find
