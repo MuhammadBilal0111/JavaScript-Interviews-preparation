@@ -1,5 +1,7 @@
-📘 JavaScript Interview Questions
-A comprehensive collection of JavaScript interview questions and answers to help you prepare for technical interviews — from beginner to advanced levels. Perfect for developers brushing up on concepts or preparing for front-end / full-stack interviews.
+# 🧠 JavaScript Interviews Preparation
+
+Welcome to the **JavaScript Interviews Preparation** repository! This project is a complete guide to help developers prepare for JavaScript technical interviews — whether you're a beginner brushing up on basics or an experienced developer interviews.
+---
 
 📌 What You'll Find
 ✅ Core JavaScript concepts
