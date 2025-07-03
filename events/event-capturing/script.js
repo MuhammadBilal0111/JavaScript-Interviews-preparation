@@ -11,6 +11,16 @@ div.addEventListener(
     capture: true,
   }
 );
+form.addEventListener(
+  "click",
+  function (e) {
+    // e.stopPropagation();
+    alert("This is form");
+  },
+  {
+    capture: true,
+  }
+);
 button.addEventListener(
   "click",
   function (e) {
@@ -21,13 +31,4 @@ button.addEventListener(
   }
 );
 
-form.addEventListener(
-  "click",
-  function (e) {
-    e.stopPropagation();
-    alert("This is form");
-  },
-  {
-    capture: true,
-  }
-);
+

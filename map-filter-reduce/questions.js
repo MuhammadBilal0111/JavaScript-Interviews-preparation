@@ -39,3 +39,9 @@ const updatedMarks = students.map((student) => {
   }
   return student;
 });
+
+console.log(
+  updatedMarks.filter((std) => {
+    return std.marks > 60;
+  })
+);

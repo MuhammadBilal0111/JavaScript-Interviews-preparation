@@ -34,7 +34,7 @@ const deepCopy = JSON.parse(JSON.stringify(originalObj)); // ✅ deep copy
 deepCopy.skills.push("Node.js");
 
 console.log(originalObj);
-// ➜ { projectsame: "Bilal", skills: ["JavaScript", "React"] }
+// ➜ { name: "Bilal", skills: ["JavaScript", "React"] }
 
 console.log(deepCopy);
 // ➜ { name: "Bilal", skills: ["JavaScript", "React", "Node.js"] }

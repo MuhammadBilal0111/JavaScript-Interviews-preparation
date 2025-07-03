@@ -3,7 +3,7 @@ var obj = {
   age: 3,
 };
 function sayHello(age, profession) {
-  console.log("Hello", this.name, "age", age, "profession", profession); // now this points to the obj2 object
+  console.log("Hello", this.name, "age", age, "profession", profession); // now this points to the obj object
 }
 const bindFunc = sayHello.bind(obj); // provides reusable bind function
 
@@ -22,7 +22,8 @@ console.log(person.getAge()); // 3
 console.log(person.getAge.bind(person2)()); // 24
 
 // interview question 1: what is the output of the code
-// Bound function
+// Bound function: A bound function is a function whose this value is permanently set (or "bound") to a specific object, using the .bind() method.
+
 // So calling .bind(null) fixes this as:
 // null in strict mode → this will be null.
 // null in non-strict mode → this becomes window.

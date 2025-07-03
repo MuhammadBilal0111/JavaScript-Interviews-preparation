@@ -17,7 +17,7 @@ let user2 = {
   childObj: {
     newName: "Ali",
     getName: function () {
-      // this function points to the immediate parent object i.e. childObj
+      // this inside the function points to the immediate parent object i.e. childObj
       // this inside method points to the immediate parent object
       console.log(this); // {newName: "Ali", getName: ƒ}
     },
@@ -47,7 +47,7 @@ let user4 = {
 
   getDetails: function () {
     // this keyword inside the arrow function comes from its parent function. If we have the parent function that is the normal function then the arrow function inside take the reference of this from that parent function and parent function take the reference of this from object itself
-    const nestedArrow = () => console.log(this); // the value of this will be user
+    const nestedArrow = () => console.log(this); // the value of this will be user4
     nestedArrow();
     // if there is no parent function then it will point to the window object
   },

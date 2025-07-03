@@ -33,6 +33,7 @@ console.log(
 
 // creating these functions from scratch are polyfills
 // pollyfills for map, filter, reduce
+
 // map
 // adding the MyMap function to the Array prototype
 Array.prototype.MyMap = function (cb) {
@@ -87,7 +88,7 @@ const arr1 = [1, 2, 4];
 arr1.forEach((element) => {
   return element * 2;
 });
-console.log(arr1); // [1,2,4]
+console.log(arr1); // [2, 4 ,8]
 
 Array.prototype.Map = function (cb) {
   let temp = [];

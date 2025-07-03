@@ -2,9 +2,9 @@ const div = document.querySelector("div");
 const form = document.querySelector("form");
 const button = document.querySelector("button");
 
-div.addEventListener("click", func);
-form.addEventListener("click", func);
-button.addEventListener("click", func);
+div.addEventListener("click", func); // event delegation
+// form.addEventListener("click", func);
+// button.addEventListener("click", func);
 
 function func(event) {
   console.log(event);

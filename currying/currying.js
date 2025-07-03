@@ -1,6 +1,8 @@
-// currying - a function take one argument at a time and return a function expecting the next argument
+// currying - Currying is a functional programming technique where a function that takes multiple arguments is transformed into a sequence of functions, each taking one argument at a time.
+
 // conversion of function from f(a,b) callable as f(a)(b)
 // no. of nested function is equal to arity
+// In currying, you take a function that expects multiple arguments and transform it into a chain of functions, each taking only one argument at a time.
 
 // normal function
 function f(a, b) {
@@ -62,7 +64,7 @@ console.log("div", div(2)(3)); // 0.6666666666666666
 
 // Advantages of currying
 // initialize the function once i.e. evaluate("sum") and use it multiple times
-// avoid passing the same variable again and again i.e. sum(2)(3) instead of sum(2, 3)
+// avoid passing the same variable again and again i.e. evaluate("sum")(2)(3) instead of evaluate("sum",2, 3)
 // use to manipulate the DOM
 
 // interview question 3

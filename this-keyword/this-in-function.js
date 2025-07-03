@@ -1,6 +1,6 @@
 // behavior of this keyword in function
 function getParams1() {
-  // this inside function points to parent object  and the parent object for the function is window object in non strict mode
+  // this inside function points to parent object  and the parent object for the function is window object 
   console.log(this); // window object in non strict mode but in strict mode it will be undefined
 }
 getParams1();

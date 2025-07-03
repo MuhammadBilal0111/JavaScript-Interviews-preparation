@@ -3,10 +3,10 @@ const multiply = (x = { ...values }) => {
   // due to the spread operator we are creating a new object every time we call the function i.e. simply cloning the object
   console.log((x.number *= 2));
 };
-multiply();
-multiply();
-multiply(values); // we are passing the reference of the object values to the function multiply
-multiply(values);
+multiply(); // 20
+multiply(); // 20
+multiply(values); // 20 // we are passing the reference of the object values to the function multiply
+multiply(values); // 40
 
 // Interview Question
 function changeAgeAndReference(person) {

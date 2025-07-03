@@ -1,5 +1,5 @@
 // Hoisting
-// During the creation phase  JS engine move the variables and the function declaration to the top of your code and this is known as hoisting
+// During the creation phase JS engine move the variables and the function declaration to the top of your code and this is known as hoisting
 
 // There are two types of phase
 // 1. Creation phase
@@ -35,7 +35,8 @@ let count = 1;
   console.log(a);
   var a = 10; // A IS HOISTED
   console.log(a);
-})()(
+})()
+(
   // Output:
   // undefined
   // 10

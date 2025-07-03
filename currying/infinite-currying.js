@@ -1,6 +1,8 @@
 // infinite currying i.e. add(5)(2)...(n) // implement it
 
-// infinite currying is a technique of converting a function that takes multiple arguments into a sequence of functions that each take a single argument
+// 🔁 What is Infinite Currying?
+// Infinite currying is a technique in JavaScript where a function keeps returning another function that takes the next argument — allowing you to pass arguments one by one, indefinitely — until you choose to stop it.
+
 // usually done through recursion
 
 // add(5)(2)(); // implement it

@@ -1,6 +1,6 @@
 // Callback function
 
-// callback function is a function tht passes into another function as an argument, which is then invoked inside the outer function to complete action.
+// callback function is a function that passes into another function as an argument, which is then invoked inside the outer function to complete action.
 
 function greeting() {
   // callback function

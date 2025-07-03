@@ -27,7 +27,7 @@ const areaOfRectangle = (l, b) => {
   return l * b;
 };
 const display = (fn) => {
-  console.log("Area is ", fn(2, 5));
+  console.log("Area is ", fn(2, 5)); // Area is 10
 };
 display(areaOfRectangle);
 

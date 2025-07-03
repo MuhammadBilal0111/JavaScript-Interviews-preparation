@@ -1,4 +1,4 @@
-// In the case of var redeclaration is possible as much as possible
+// In the case of var, redeclaration is possible
 var a;
 var a;
 console.log(a); // Output: undefined
@@ -21,8 +21,11 @@ let c;
 }
 console.log(c) // undefined
 
-const d;
-console.log(d); // SyntaxError: Missing initializer in const declaration
+const c;
+{
+    const c;
+}
+console.log(c) // SyntaxError: Missing initializer in const declaration
 
 // Declaration without initialization
 // we can declare the var and let values without initialization but we cannot initialize const variable it will generate SyntaxError: Missing initializer in const declaration

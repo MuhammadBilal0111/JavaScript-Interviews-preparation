@@ -1,10 +1,9 @@
-
 // Interview Question
 
-const user={
+const user = {
   name: "Peter",
   field: "developer",
-}
+};
 const name = "John";
 const { name: newName } = user; // destructuring assignment
 console.log(newName); // Peter

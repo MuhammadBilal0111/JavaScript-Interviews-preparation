@@ -25,7 +25,7 @@ subscribe1();
 
 // when the function is created the closure will be created and bind itself with the env variable or its lexical scope
 // closure make it possible for a function to have private variables
-// function have the access to all the scopes outer scope and global scope
+// function have the access to all the scopes e.g. outer scope and global scope
 
 // Closure Scope chain
 // Every closure has three scope
@@ -101,7 +101,7 @@ for (var i = 0; i < 3; i++) {
 
 for (let i = 0; i < 3; i++) {
   setTimeout(() => {
-    console.log(i); // output: 3 3 3
+    console.log(i); // output: 0 1 2
   }, i * 1000);
 }
 // let is a block scoped variable and JS engine will create a new memory block for each iteration of the loop
@@ -235,4 +235,4 @@ greet();
 // global scope
 // outer scope
 // local scope
-cons;
+

@@ -6,7 +6,7 @@ var obj1 = {
 function sayHello() {
   console.log("Hello", this.obj1); // this is a global object and this points to window object
 }
-sayHello(); // Hello undefined
+sayHello(); // Hello {name: "bilal"};
 
 // this points to the window object but to change the behavior of this keyword to point to the specific object we can use call, apply and bind method
 
@@ -33,7 +33,7 @@ var obj4 = {
   name: "bilal",
 };
 function sayHello(age, profession) {
-  console.log("Hello", this.name, "age", age, "profession", profession); // now this points to the obj2 object
+  console.log("Hello", this.name, "age", age, "profession", profession); // now this points to the obj4 object
 }
 sayHello.call(obj4, 45, "Software Engineer"); // Hello bilal age 45 profession Software Engineer
 
@@ -62,7 +62,9 @@ console.log(person.getAge()); // 3
 console.log(person.getAge.call(person2)); // 24
 
 // interview question 3: what is the output of the code
+// arrow functions do not have their own this.
 
+// They inherit this from their surrounding (lexical) context
 var status = "pass1";
 setTimeout(() => {
   const status = "fail";
@@ -73,7 +75,9 @@ setTimeout(() => {
     },
   };
   console.log(data.getStatus()); // pass2
-  console.log(data.getStatus.call(this)); // pass1 because setTimeOut()passing towards the global object
+  console.log(data.getStatus.call(this)); // pass1  .call(this) forces the this inside getStatus to be whatever this is in the current scope.
+
+  // In this case, this is inherited from the arrow function → which is the global object.
 }, 0);
 
 // interview question 3: what is the output of the code

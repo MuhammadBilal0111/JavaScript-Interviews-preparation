@@ -3,14 +3,14 @@
 
 const obj1 = { name: "bill", age: 22, skills: ["js", "react"] };
 const admin = { admin: true, ...obj1 };
-console.log(admin); // { admin: true, name: 'bill', age: 22 }
+console.log(admin); // { admin: true, name: 'bill', age: 22, skills: ["js", "react"] }
 // ...obj1 means add the properties of obj1 to the new object admin
 admin.name = "khan"; // it will not effect the value of name property of object obj1
 // because we are creating a new object admin using spread operator
 admin.skills.push("Nodejs"); // it will effect the value of skills property of object obj1
 // because we are using the concept of shallow copying using spread operator
-console.log("obj1", obj1);
-console.log("admin", admin);
+console.log("obj1", obj1); // { name: "bill", age: 22, skills: ["js", "react", "Nodejs"] };
+console.log("admin", admin); // { admin: true, name: 'khan', age: 22, skills: ["js", "react", "Nodejs"] }
 
 // Interview Question --> 8
 
